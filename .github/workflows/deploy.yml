@@ -16,6 +16,7 @@ jobs:
 
       - name: 🚀 Deploy via FTP
         uses: uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+       
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
