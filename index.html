@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingredible – Decode What You Eat</title>
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.42.0/tabler-icons.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'IBM Plex Serif', 'IBM Plex Mono', sans-serif;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-white text-gray-900 antialiased">
+
+  <!-- Navigation -->
+  <header class="border-b bg-white/80 backdrop-blur sticky top-0 z-20 shadow-sm">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
+      <div class="flex items-center space-x-3">
+        <span class="inline-flex items-center text-2xl font-bold text-green-600 tracking-tight">
+          <i class="ti ti-leaf mr-1"></i>
+          Ingredible
+        </span>
+      </div>
+      <ul class="flex gap-6 text-md font-medium">
+        <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+        <li><a href="#" class="hover:text-green-600 transition">Ingredients</a></li>
+        <li><a href="#" class="hover:text-green-600 transition">Supplements</a></li>
+        <li><a href="#" class="hover:text-green-600 transition">Learn</a></li>
+        <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+      </ul>
+      <form class="relative w-44 hidden sm:block">
+        <input type="text" placeholder="Search…" class="w-full pl-9 pr-3 py-2 rounded-full border outline-none focus:border-green-500 transition text-sm bg-gray-50"/>
+        <span class="absolute left-2 top-2.5 text-gray-400">
+          <i class="ti ti-search"></i>
+        </span>
+      </form>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION with background image -->
+  <section class="relative min-h-[460px] flex items-center justify-center">
+    <img 
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+      alt="Nature landscape meadow with mountains"
+      class="absolute inset-0 w-full h-full object-cover object-center opacity-90"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-gradient-to-br from-green-900/60 via-green-700/40 to-emerald-100/40"></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 py-20">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white drop-shadow-lg mb-4 tracking-tight">Decode What You Eat</h1>
+      <p class="text-2xl font-medium text-emerald-50 mb-8 drop-shadow">Smart insights into ingredients and supplements — made simple.</p>
+      <a href="#" class="inline-flex items-center px-7 py-3 bg-white/90 text-green-700 text-lg font-semibold rounded-full shadow-lg hover:bg-green-600 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-green-300">
+        <i class="ti ti-sparkles mr-2"></i>
+        Explore Latest Findings
+        <i class="ti ti-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTICLE -->
+  <section class="max-w-4xl mx-auto px-4 mt-12">
+    <div class="bg-white/95 shadow-2xl rounded-3xl overflow-hidden flex flex-col md:flex-row ring-1 ring-green-100">
+      <div class="md:w-2/3 flex flex-col justify-center p-8">
+        <span class="uppercase text-xs text-green-600 font-bold tracking-wide mb-2">Featured Article</span>
+        <h2 class="text-2xl font-semibold mb-2">What’s Really in Your Multivitamin?</h2>
+        <p class="text-gray-600 mb-4">Unpack the surprising truth behind popular multivitamin ingredients — and what their labels don’t tell you.</p>
+        <a href="#" class="text-green-700 font-medium hover:underline flex items-center group transition">
+          Read More 
+          <i class="ti ti-chevron-right ml-1 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+      <div class="md:w-1/3 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center p-8">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+          alt="Vitamins"
+          class="rounded-xl shadow-lg w-28 h-28 object-cover object-center"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST NEWS/GRID -->
+  <section class="max-w-6xl mx-auto px-4 mt-16">
+    <h3 class="text-xl font-semibold mb-6 text-gray-900">Latest Insights & Spotlights</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Item 1 -->
+      <div class="relative rounded-2xl shadow-lg overflow-hidden group transition-all">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-100/70 via-blue-50/70 to-white"></div>
+        <div class="relative z-10 p-6 flex flex-col h-full">
+          <div class="flex items-center space-x-2 mb-2">
+            <i class="ti ti-brain text-indigo-500 text-2xl"></i>
+            <span class="text-xs font-semibold text-indigo-600">Brain Health</span>
+          </div>
+          <h4 class="font-bold text-lg mb-1">Omega-3s: Fact vs. Hype</h4>
+          <p class="text-gray-700 text-sm mb-3">Do brain-boosting supplements really work? Here’s what research says about Omega-3 fatty acids.</p>
+          <a href="#" class="text-indigo-700 font-medium text-sm hover:underline mt-auto flex items-center">
+            Read
+            <i class="ti ti-chevron-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="relative rounded-2xl shadow-lg overflow-hidden group transition-all">
+        <div class="absolute inset-0 bg-gradient-to-br from-emerald-100/80 via-green-50/80 to-white"></div>
+        <div class="relative z-10 p-6 flex flex-col h-full">
+          <div class="flex items-center space-x-2 mb-2">
+            <i class="ti ti-stomach text-emerald-500 text-2xl"></i>
+            <span class="text-xs font-semibold text-emerald-600">Gut Health</span>
+          </div>
+          <h4 class="font-bold text-lg mb-1">Prebiotics vs. Probiotics</h4>
+          <p class="text-gray-700 text-sm mb-3">Understand the difference and learn which you might really need for a balanced microbiome.</p>
+          <a href="#" class="text-emerald-700 font-medium text-sm hover:underline mt-auto flex items-center">
+            Read
+            <i class="ti ti-chevron-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="relative rounded-2xl shadow-lg overflow-hidden group transition-all">
+        <div class="absolute inset-0 bg-gradient-to-br from-yellow-100/80 via-orange-50/80 to-white"></div>
+        <div class="relative z-10 p-6 flex flex-col h-full">
+          <div class="flex items-center space-x-2 mb-2">
+            <i class="ti ti-moon-stars text-yellow-500 text-2xl"></i>
+            <span class="text-xs font-semibold text-yellow-600">Sleep</span>
+          </div>
+          <h4 class="font-bold text-lg mb-1">Melatonin: Safe for Daily Use?</h4>
+          <p class="text-gray-700 text-sm mb-3">Is nightly melatonin harmless? See what science says about dosage and long-term effects.</p>
+          <a href="#" class="text-yellow-700 font-medium text-sm hover:underline mt-auto flex items-center">
+            Read
+            <i class="ti ti-chevron-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS CAROUSEL -->
+  <section class="max-w-4xl mx-auto px-4 mt-16">
+    <h3 class="text-xl font-semibold mb-5 text-gray-900">Quick Facts</h3>
+    <div class="flex gap-6 overflow-x-auto pb-2">
+      <!-- Fact 1 -->
+      <div class="min-w-[220px] flex-shrink-0 bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 flex items-center space-x-3 shadow">
+        <i class="ti ti-bolt text-xl text-green-500"></i>
+        <span class="text-gray-700 text-sm">Caffeine peaks in your bloodstream within 1 hour of consumption.</span>
+      </div>
+      <!-- Fact 2 -->
+      <div class="min-w-[220px] flex-shrink-0 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 flex items-center space-x-3 shadow">
+        <i class="ti ti-dna text-xl text-blue-500"></i>
+        <span class="text-gray-700 text-sm">Not all “natural” supplements are risk-free or well-regulated.</span>
+      </div>
+      <!-- Fact 3 -->
+      <div class="min-w-[220px] flex-shrink-0 bg-gradient-to-br from-lime-50 to-lime-100 rounded-xl p-4 flex items-center space-x-3 shadow">
+        <i class="ti ti-apple text-xl text-lime-500"></i>
+        <span class="text-gray-700 text-sm">Fiber supports gut health and may reduce chronic disease risk.</span>
+      </div>
+      <!-- Fact 4 -->
+      <div class="min-w-[220px] flex-shrink-0 bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-4 flex items-center space-x-3 shadow">
+        <i class="ti ti-heartbeat text-xl text-pink-500"></i>
+        <span class="text-gray-700 text-sm">Vitamins A, D, E, K are fat-soluble — best absorbed with food.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SIGNUP -->
+  <section class="max-w-4xl mx-auto px-4 mt-20 mb-16">
+    <div class="relative bg-gradient-to-br from-green-600 via-emerald-500 to-green-700 rounded-3xl p-10 flex flex-col items-center shadow-2xl overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80" alt="Green field" class="absolute inset-0 w-full h-full object-cover object-center opacity-10 pointer-events-none" loading="lazy" />
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2 drop-shadow">Get smarter about what goes into your body</h3>
+      <p class="text-white/90 mb-6 text-center text-lg">Sign up for our newsletter. Science-backed info, no spam — ever.</p>
+      <form class="w-full sm:w-auto flex gap-3 flex-col sm:flex-row">
+        <input type="email" required placeholder="Your email address" class="rounded-full px-5 py-3 text-base bg-white/90 text-gray-800 shadow focus:outline-none focus:ring-2 focus:ring-green-400 border-0"/>
+        <button type="submit" class="rounded-full bg-white text-green-700 px-6 py-3 font-semibold shadow hover:bg-green-800 hover:text-white transition">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- INGREDIENT DEEP DIVE TEMPLATE -->
+  <section class="max-w-3xl mx-auto px-4 mb-20">
+    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-lg p-8">
+      <div class="flex items-center space-x-4 mb-6">
+        <i class="ti ti-dna text-3xl text-green-600"></i>
+        <div>
+          <h2 class="text-2xl font-semibold">Aspartame</h2>
+          <p class="text-gray-500 text-sm">What does it really do?</p>
+        </div>
+      </div>
+      <div>
+        <!-- Tabs -->
+        <div class="flex space-x-6 border-b mb-6">
+          <button class="pb-2 border-b-2 border-green-600 font-semibold text-green-700">What It Is</button>
+          <button class="pb-2 text-gray-600 hover:text-green-700 transition">What It Does To Your Body</button>
+          <button class="pb-2 text-gray-600 hover:text-green-700 transition">Scientific Research</button>
+          <button class="pb-2 text-gray-600 hover:text-green-700 transition">Common Sources</button>
+          <button class="pb-2 text-gray-600 hover:text-green-700 transition">Verdict / Score</button>
+        </div>
+        <!-- Content for "What It Is" -->
+        <div>
+          <h4 class="font-semibold mb-2">What It Is</h4>
+          <p class="text-gray-700 text-sm mb-4">Aspartame is an artificial, low-calorie sweetener found in many sugar-free products. It's 200x sweeter than sugar, so only tiny amounts are needed to sweeten foods and drinks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPLEMENT DEEP DIVE TEMPLATE -->
+  <section class="max-w-3xl mx-auto px-4 mb-20">
+    <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl shadow-lg p-8">
+      <div class="flex items-center space-x-4 mb-6">
+        <i class="ti ti-bolt text-3xl text-green-600"></i>
+        <div>
+          <h2 class="text-2xl font-semibold">Creatine</h2>
+          <p class="text-gray-500 text-sm">Benefits, Myths, and Risks</p>
+        </div>
+      </div>
+      <div class="space-y-6">
+        <div>
+          <h4 class="font-semibold mb-1">Effects (Short & Long Term)</h4>
+          <p class="text-gray-700 text-sm mb-2">Supports rapid energy production in muscles, aiding strength and performance. Long-term use is widely considered safe.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-1">Ideal Use & Dosage</h4>
+          <p class="text-gray-700 text-sm mb-2">Common dose: 3–5g daily. Best with water, after exercise. Loading phases are optional and not necessary for most users.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-1">Potential Risks</h4>
+          <p class="text-gray-700 text-sm mb-2">Mild water retention; rare cases of digestive upset. No strong evidence of kidney harm in healthy individuals.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-1">Backed-by-Science vs. Overhyped</h4>
+          <p class="text-gray-700 text-sm">Creatine is one of the most researched and effective sports supplements. Performance and cognitive benefits are well-supported; “muscle bloating” is a myth for most users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-tr from-green-50 via-white to-green-100 border-t py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+      <div>© 2024 Ingredible. Empowering healthy choices.</div>
+      <div class="flex gap-4 mt-2 sm:mt-0">
+        <a href="#" class="hover:text-green-700">Privacy</a>
+        <a href="#" class="hover:text-green-700">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
